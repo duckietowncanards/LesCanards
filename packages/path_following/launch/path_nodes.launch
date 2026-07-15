@@ -1,0 +1,22 @@
+<launch>
+    <arg name="veh" doc="Name of vehicle. ex: canards"/>
+
+    <group ns="$(arg veh)">
+
+        <node
+            pkg="path_following"
+            type="path_node.py"
+            name="path_node"
+            output="screen"
+            required="true"/>
+
+        <node
+            pkg="path_following"
+            type="planning_node.py"
+            name="planning_node"
+            output="screen"
+            required="true"/>
+
+    </group>
+
+</launch>

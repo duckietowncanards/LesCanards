@@ -1,0 +1,7 @@
+# LIST YOUR PYTHON3 PACKAGES HERE
+numpy
+opencv-python
+fastapi
+uvicorn
+websockets
+heapdict

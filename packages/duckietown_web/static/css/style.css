@@ -1,0 +1,207 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: #888;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1920px;
+    height: 1080px;
+
+    flex: none;
+
+    background: rgb(254, 194, 11);
+
+    transform-origin: center center;
+    position: relative
+}
+
+.map-container {
+    position: absolute;
+
+    left: 1139px;
+    top: 160px;
+
+    width: 721px; 
+}
+
+#map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#map-title,
+#cam-title,
+#carla-title {
+    position: absolute;
+
+    left: 50%;  
+    top: -60px;  
+
+    transform: translateX(-50%); 
+
+    white-space: nowrap; 
+
+    z-index: 1;
+
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.control-button {
+    position: absolute;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 32px;
+}
+
+.run { left: 240px; top: 160px; }
+.stop { left: 355px; top: 160px; }
+.reset { left: 1760px; top: 60px; }
+
+.controller-container1 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    left: 60px;
+    top: 300px;
+
+    align-items: flex-start;
+}
+
+.controller-panel1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 16px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0);
+    font-size: 20px;
+}
+
+.controller-title {
+    font-weight: bold;
+    text-align: center;
+}
+
+.controller-grid {
+    display: grid;
+    grid-template-columns: auto 100px 100px;
+    gap: 8px 14px;
+    align-items: center;
+}
+
+.controller-grid .controller-head {
+    font-weight: bold;
+    text-align: center;
+}
+
+.controller-grid .controller-action {
+    font-weight: bold;
+}
+
+.controller-grid input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.controller-vscale {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.controller-vscale input {
+    width: 90px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.controller-apply {
+    margin-top: 4px;
+    font-size: 20px;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.camera {
+    position: absolute;
+
+    left: 700px;
+    top: 300px;
+
+    width: 400px;
+}
+#cam {
+    position: absolute;
+    width: 400px; 
+    height: auto;
+}
+
+.carla-row {
+    position: absolute;
+
+    left: 60px;
+    top: 670px; 
+
+    display: flex;
+    gap: 40px; 
+}
+
+.carla1,
+.carla2 {
+    width: 390px;
+    height: 390px;
+}
+
+#bev,
+#traj {
+    display: block;
+
+    width: 390px;
+    height: 390px;
+}
+
+.french {
+    position: absolute;
+
+    left: 60px;
+    top:  60px;
+
+    width: 141px;
+    height: auto;
+}
+
+#big-title {
+    position: absolute;
+
+    left: 240px; 
+    top: 60px;
+
+
+    z-index: 1; 
+
+    color: black;
+    font-size: 75px;
+    font-weight: bold;
+}
